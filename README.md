@@ -2,27 +2,48 @@
 ![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange?style=for-the-badge&logo=ubuntu)
 ![WordPress](https://img.shields.io/badge/WordPress-CMS-blue?style=for-the-badge&logo=wordpress)
 ![Nginx](https://img.shields.io/badge/Nginx-Web_Server-green?style=for-the-badge&logo=nginx)
+![PHP](https://img.shields.io/badge/PHP-FPM-purple?style=for-the-badge&logo=php)
+![MariaDB](https://img.shields.io/badge/MariaDB-Database-blue?style=for-the-badge&logo=mariadb)
 
 # 🚀 Azure Business Website Hosting Platform
 
-## Project Overview
+## 📌 Project Overview
 
-A complete cloud-based business website deployment platform built using Microsoft Azure, Ubuntu Linux, Nginx, PHP, MariaDB, and WordPress.
+A complete cloud-based business website hosting solution deployed on Microsoft Azure using Ubuntu Linux, Nginx, PHP-FPM, MariaDB, and WordPress.
 
-This project demonstrates how small businesses can get a professional online presence with:
+This project demonstrates the complete lifecycle of deploying a production-style business website environment:
 
-✅ Custom Domain  
+- Cloud infrastructure provisioning
+- Linux server configuration
+- Web server deployment
+- Database setup
+- WordPress installation
+- DNS configuration
+- SSL implementation
+- Business website deployment
+
+
+## 💼 Business Solution Features
+
+This platform enables small businesses to establish a professional online presence:
+
+✅ Custom Domain Setup  
 ✅ Mobile Responsive Website  
-✅ Secure HTTPS  
-✅ Business Email Setup  
+✅ Secure HTTPS SSL Certificate  
+✅ Business Email Configuration  
+✅ Google Business Profile Integration  
+✅ Google Maps Integration  
+✅ WhatsApp Business Integration  
+✅ Contact Forms  
 ✅ Online Payment Integration  
-✅ Appointment System  
-✅ Google Business Integration  
-✅ WhatsApp Integration  
+✅ Appointment Booking System  
+✅ Product Showcase Capability  
+✅ Cloud Hosting Infrastructure  
+
 
 ---
 
-# 🏗️ Architecture
+# 🏗️ Cloud Architecture
 
 ![Architecture](assets/architecture-diagram.png)
 
@@ -33,35 +54,84 @@ This project demonstrates how small businesses can get a professional online pre
 
 ## Azure Virtual Machine Creation
 
+The hosting environment was deployed using Microsoft Azure Virtual Machine services.
+
 ![Azure VM](screenshots/07-virtual-machine-overview.png)
 
 
 ## Network Security Configuration
 
-![NSG Rules](screenshots/10-allowed-ports.png)
+Configured Azure Network Security Group rules for secure application access.
+
+![NSG Rules](screenshots/10-network-security-rules.png)
 
 
 ---
 
-# 🐧 Linux Server Setup
+# 🐧 Linux Server Administration
 
-## SSH Connection
+## SSH Remote Administration
 
-![SSH Login](screenshots/20-putty-login.png)
+Configured secure Linux server access using SSH key authentication.
 
+![SSH Login](screenshots/24-ssh-login-success.png)
+
+
+## System Update and Package Management
+
+Performed Ubuntu server updates and package installation.
+
+![System Update](screenshots/25-system-update.png)
+
+
+---
+
+# 🌐 Web Server Deployment
 
 ## Nginx Installation
 
-![Nginx](screenshots/26-nginx-website-browser.png)
+Installed and configured Nginx as the production web server.
+
+![Nginx Installation](screenshots/30-nginx-default-page.png)
+
+
+## Nginx Virtual Host Configuration
+
+Configured domain-based hosting using Nginx server blocks.
+
+![Nginx Configuration](screenshots/38-nginx-server-block.png)
 
 
 ---
 
 # 🗄️ Database Configuration
 
-## MariaDB Setup
+## MariaDB Installation
 
-![MariaDB](screenshots/31-database-created.png)
+Configured MariaDB database server for WordPress application hosting.
+
+![MariaDB Setup](screenshots/34-wordpress-database-created.png)
+
+
+## Database Verification
+
+Verified database connectivity and user permissions.
+
+![Database Verification](screenshots/35-database-verification.png)
+
+
+---
+
+# 🐘 PHP Application Environment
+
+## PHP-FPM Configuration
+
+Configured PHP-FPM runtime environment required for WordPress.
+
+![PHP Version](screenshots/31-php-version.png)
+
+
+![PHP-FPM](screenshots/37-php-fpm-running.png)
 
 
 ---
@@ -70,37 +140,49 @@ This project demonstrates how small businesses can get a professional online pre
 
 ## WordPress Installation
 
-![WordPress Setup](screenshots/41-wordpress-installation.png)
+Deployed WordPress CMS and connected it with MariaDB database.
+
+![WordPress Installation](screenshots/40-wordpress-installation.png)
+
+
+## WordPress Setup
+
+Configured website title, administrator account, and initial settings.
+
+![WordPress Setup](screenshots/41-wordpress-setup-details.png)
 
 
 ## WordPress Dashboard
 
-![Dashboard](screenshots/45-wordpress-admin-dashboard.png)
+Successfully accessed WordPress administration dashboard.
+
+![WordPress Dashboard](screenshots/44-wordpress-admin-dashboard.png)
 
 
 ---
 
 # 🎨 Final Business Website
 
-## Desktop View
+## Live Website
 
-![Website](screenshots/46-homepage-live.png)
+The final business website is hosted on Azure cloud infrastructure.
 
-
-## Mobile Responsive View
-
-![Mobile](screenshots/47-mobile-responsive.png)
+![Website Homepage](screenshots/45-homepage-live.png)
 
 
 ---
 
 # 🔒 Security & Performance
 
+Implemented basic production security practices:
+
 - HTTPS SSL Certificate
-- Nginx Security Configuration
+- Azure Network Security Group
+- SSH Key Authentication
+- Nginx Server Configuration
 - Database User Separation
 - Linux Permission Management
-- Azure Network Security Group
+- Secure Database Configuration
 
 
 ---
@@ -110,48 +192,97 @@ This project demonstrates how small businesses can get a professional online pre
 | Technology | Purpose |
 |---|---|
 | Microsoft Azure | Cloud Infrastructure |
-| Ubuntu Server | Web Server OS |
+| Ubuntu Server | Operating System |
 | Nginx | Web Server |
 | PHP-FPM | Application Runtime |
-| MariaDB | Database |
-| WordPress | CMS |
+| MariaDB | Database Server |
+| WordPress | CMS Platform |
 | Let's Encrypt | SSL Certificate |
 | DNS | Domain Management |
+| GitHub | Source Documentation |
 
 
 ---
 
 # 💼 Business Use Case
 
-This platform can be used to provide affordable digital solutions for small businesses:
+This hosting platform can be used to provide affordable digital solutions for:
 
 - Restaurants
 - Clinics
 - Salons
-- Shops
+- Retail Shops
 - Consultants
-- Local service providers
+- Local Service Providers
+- Small Businesses
+
+
+The objective is to help businesses get:
+
+✅ Professional Website  
+✅ Online Customer Communication  
+✅ Digital Payments  
+✅ Appointment Management  
+✅ Better Online Visibility  
 
 
 ---
 
 # 👨‍💻 Skills Demonstrated
 
-- Azure VM Deployment
-- Linux Server Administration
-- SSH Management
-- Web Server Configuration
-- Database Administration
+### Cloud & Infrastructure
+
+- Microsoft Azure VM Deployment
+- Azure Networking
+- Network Security Groups
+- Cloud Resource Management
+
+### Linux Administration
+
+- Ubuntu Server Management
+- SSH Administration
+- Package Management
+- Service Management
+
+### Web Hosting
+
+- Nginx Configuration
+- PHP-FPM Setup
+- MariaDB Administration
+- WordPress Hosting
+
+### Deployment & Documentation
+
 - DNS Configuration
 - SSL Deployment
-- WordPress Hosting
+- Troubleshooting
 - Technical Documentation
 
+
+---
+
+# 📸 Complete Deployment Evidence
+
+The complete step-by-step deployment screenshots are available here:
+
+[View All Deployment Screenshots](screenshots/)
+
+
+---
 
 # 📂 Project Documentation
 
 - [Deployment Guide](documentation/deployment-guide.md)
-- [Troubleshooting](documentation/troubleshooting.md)
+- [Troubleshooting Guide](documentation/troubleshooting.md)
 - [Security Hardening](documentation/security-hardening.md)
 - [Nginx Configuration](nginx-config/launchkart.conf)
 - [Database Setup](database/wordpress-db-setup.sql)
+
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+This repository is a technical portfolio demonstration showing Azure cloud deployment, Linux administration, and business website hosting capabilities.
