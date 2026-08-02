@@ -4,46 +4,61 @@
 ![Nginx](https://img.shields.io/badge/Nginx-Web_Server-green?style=for-the-badge&logo=nginx)
 ![PHP](https://img.shields.io/badge/PHP-FPM-purple?style=for-the-badge&logo=php)
 ![MariaDB](https://img.shields.io/badge/MariaDB-Database-blue?style=for-the-badge&logo=mariadb)
+![SSL](https://img.shields.io/badge/SSL-Let's%20Encrypt-brightgreen?style=for-the-badge)
 
 # 🚀 Azure Business Website Hosting Platform
 
 ## 📌 Project Overview
 
-A complete cloud-based business website hosting solution deployed on Microsoft Azure using Ubuntu Linux, Nginx, PHP-FPM, MariaDB, and WordPress.
+A complete cloud-based business website hosting platform deployed on Microsoft Azure using Ubuntu Linux, Nginx, PHP-FPM, MariaDB, and WordPress.
 
-This project demonstrates the complete lifecycle of deploying a production-style business website environment:
+This project demonstrates the complete lifecycle of deploying a production-style web hosting environment:
 
-- Cloud infrastructure provisioning
-- Linux server configuration
-- Web server deployment
-- Database setup
-- WordPress installation
-- DNS configuration
-- SSL implementation
-- Business website deployment
-
-
-## 💼 Business Solution Features
-
-This platform enables small businesses to establish a professional online presence:
-
-✅ Custom Domain Setup  
-✅ Mobile Responsive Website  
-✅ Secure HTTPS SSL Certificate  
-✅ Business Email Configuration  
-✅ Google Business Profile Integration  
-✅ Google Maps Integration  
-✅ WhatsApp Business Integration  
-✅ Contact Forms  
-✅ Online Payment Integration  
-✅ Appointment Booking System  
-✅ Product Showcase Capability  
-✅ Cloud Hosting Infrastructure  
+- Azure cloud infrastructure provisioning
+- Linux server administration
+- Nginx web server configuration
+- PHP application runtime setup
+- MariaDB database deployment
+- WordPress CMS installation
+- Custom domain configuration
+- DNS A Record management
+- HTTPS SSL implementation
 
 
 ---
 
 # 🏗️ Cloud Architecture
+
+User Browser
+|
+|
+Custom Domain
+|
+|
+DNS A Record
+|
+|
+Azure Public IP
+|
+|
+Ubuntu Linux VM
+|
+|
+Nginx Web Server
+|
+|
+PHP-FPM
+|
+|
+MariaDB Database
+|
+|
+WordPress CMS
+|
+|
+HTTPS SSL Certificate
+
+
 
 ![Architecture](assets/architecture-diagram.png)
 
@@ -54,14 +69,19 @@ This platform enables small businesses to establish a professional online presen
 
 ## Azure Virtual Machine Creation
 
-The hosting environment was deployed using Microsoft Azure Virtual Machine services.
+The hosting server was deployed using Microsoft Azure Virtual Machine services.
 
 ![Azure VM](screenshots/07-virtual-machine-overview.png)
 
 
 ## Network Security Configuration
 
-Configured Azure Network Security Group rules for secure application access.
+Configured Azure Network Security Group rules:
+
+- SSH (22) for administration
+- HTTP (80) for web traffic
+- HTTPS (443) for secure website access
+
 
 ![NSG Rules](screenshots/10-network-security-rules.png)
 
@@ -77,9 +97,9 @@ Configured secure Linux server access using SSH key authentication.
 ![SSH Login](screenshots/24-ssh-login-success.png)
 
 
-## System Update and Package Management
+## System Updates
 
-Performed Ubuntu server updates and package installation.
+Performed Ubuntu server updates and package management.
 
 ![System Update](screenshots/25-system-update.png)
 
@@ -90,14 +110,14 @@ Performed Ubuntu server updates and package installation.
 
 ## Nginx Installation
 
-Installed and configured Nginx as the production web server.
+Installed and configured Nginx as the web server.
 
-![Nginx Installation](screenshots/30-nginx-default-page.png)
+![Nginx](screenshots/30-nginx-default-page.png)
 
 
-## Nginx Virtual Host Configuration
+## Nginx Server Block Configuration
 
-Configured domain-based hosting using Nginx server blocks.
+Configured domain-based hosting using Nginx virtual host configuration.
 
 ![Nginx Configuration](screenshots/38-nginx-server-block.png)
 
@@ -106,16 +126,16 @@ Configured domain-based hosting using Nginx server blocks.
 
 # 🗄️ Database Configuration
 
-## MariaDB Installation
+## MariaDB Setup
 
-Configured MariaDB database server for WordPress application hosting.
+Installed and configured MariaDB database server for WordPress.
 
-![MariaDB Setup](screenshots/34-wordpress-database-created.png)
+![Database Setup](screenshots/34-wordpress-database-created.png)
 
 
 ## Database Verification
 
-Verified database connectivity and user permissions.
+Verified database creation, user permissions, and connectivity.
 
 ![Database Verification](screenshots/35-database-verification.png)
 
@@ -124,9 +144,7 @@ Verified database connectivity and user permissions.
 
 # 🐘 PHP Application Environment
 
-## PHP-FPM Configuration
-
-Configured PHP-FPM runtime environment required for WordPress.
+Configured PHP-FPM runtime required for WordPress.
 
 ![PHP Version](screenshots/31-php-version.png)
 
@@ -140,14 +158,14 @@ Configured PHP-FPM runtime environment required for WordPress.
 
 ## WordPress Installation
 
-Deployed WordPress CMS and connected it with MariaDB database.
+Installed WordPress CMS and connected it with MariaDB.
 
 ![WordPress Installation](screenshots/40-wordpress-installation.png)
 
 
-## WordPress Setup
+## WordPress Configuration
 
-Configured website title, administrator account, and initial settings.
+Configured website information and administrator settings.
 
 ![WordPress Setup](screenshots/41-wordpress-setup-details.png)
 
@@ -156,57 +174,63 @@ Configured website title, administrator account, and initial settings.
 
 Successfully accessed WordPress administration dashboard.
 
-![WordPress Dashboard](screenshots/44-wordpress-admin-dashboard.png)
+![Dashboard](screenshots/44-wordpress-admin-dashboard.png)
 
 
 ---
 
-# 🎨 Final Business Website
+# 🌍 Domain & DNS Configuration
 
-## Live Website
+Configured custom domain connectivity:
 
-The final business website is hosted on Azure cloud infrastructure.
+- Domain registered
+- DNS A Record created
+- Azure public IP mapped
+- Website accessed through domain
 
-![Website Homepage](screenshots/45-homepage-live.png)
+
+![DNS Configuration](screenshots/48-dns-a-record-configuration.png)
+
+
+## Website Access
+
+Live website successfully accessible:
+
+
+https://www.launchkart.in
+
+
+
+![Website Live](screenshots/50-website-access-through-domain.png)
 
 
 ---
 
-# 🔒 Security & Performance
+# 🔒 HTTPS SSL Deployment
 
-Implemented basic production security practices:
+Implemented SSL certificate using Let's Encrypt Certbot.
 
-- HTTPS SSL Certificate
-- Azure Network Security Group
-- SSH Key Authentication
-- Nginx Server Configuration
-- Database User Separation
-- Linux Permission Management
-- Secure Database Configuration
+Steps completed:
+
+- Installed Certbot
+- Generated SSL certificate
+- Configured Nginx HTTPS redirect
+- Verified secure HTTPS access
 
 
----
+![SSL Installation](screenshots/52-letsencrypt-ssl-generated.png)
 
-# 🛠️ Technologies Used
 
-| Technology | Purpose |
-|---|---|
-| Microsoft Azure | Cloud Infrastructure |
-| Ubuntu Server | Operating System |
-| Nginx | Web Server |
-| PHP-FPM | Application Runtime |
-| MariaDB | Database Server |
-| WordPress | CMS Platform |
-| Let's Encrypt | SSL Certificate |
-| DNS | Domain Management |
-| GitHub | Source Documentation |
+![HTTPS Website](screenshots/53-https-website-live.png)
 
 
 ---
 
 # 💼 Business Use Case
 
-This hosting platform can be used to provide affordable digital solutions for:
+This platform demonstrates how small businesses can receive affordable digital infrastructure:
+
+Target users:
 
 - Restaurants
 - Clinics
@@ -214,46 +238,69 @@ This hosting platform can be used to provide affordable digital solutions for:
 - Retail Shops
 - Consultants
 - Local Service Providers
-- Small Businesses
 
 
-The objective is to help businesses get:
+Possible business solutions:
 
 ✅ Professional Website  
-✅ Online Customer Communication  
-✅ Digital Payments  
-✅ Appointment Management  
-✅ Better Online Visibility  
+✅ Custom Domain  
+✅ Secure HTTPS  
+✅ Business Email Setup  
+✅ Google Business Integration  
+✅ WhatsApp Integration  
+✅ Online Presence Management  
+
+
+---
+
+# 🛠️ Technologies Used
+
+
+| Technology | Purpose |
+|---|---|
+| Microsoft Azure | Cloud Infrastructure |
+| Ubuntu Server | Linux Hosting Platform |
+| Nginx | Web Server |
+| PHP-FPM | Application Runtime |
+| MariaDB | Database Server |
+| WordPress | CMS Platform |
+| Let's Encrypt | SSL Certificate |
+| DNS | Domain Management |
+| GitHub | Documentation & Version Control |
 
 
 ---
 
 # 👨‍💻 Skills Demonstrated
 
-### Cloud & Infrastructure
 
-- Microsoft Azure VM Deployment
+## Cloud Infrastructure
+
+- Azure Virtual Machine Deployment
 - Azure Networking
-- Network Security Groups
+- NSG Configuration
 - Cloud Resource Management
 
-### Linux Administration
+
+## Linux Administration
 
 - Ubuntu Server Management
-- SSH Administration
-- Package Management
+- SSH Configuration
+- Package Installation
 - Service Management
 
-### Web Hosting
+
+## Web Hosting
 
 - Nginx Configuration
 - PHP-FPM Setup
 - MariaDB Administration
 - WordPress Hosting
 
-### Deployment & Documentation
 
-- DNS Configuration
+## Deployment
+
+- DNS Management
 - SSL Deployment
 - Troubleshooting
 - Technical Documentation
@@ -261,11 +308,21 @@ The objective is to help businesses get:
 
 ---
 
-# 📸 Complete Deployment Evidence
+# 📸 Deployment Evidence
 
-The complete step-by-step deployment screenshots are available here:
+Complete step-by-step implementation screenshots:
 
-[View All Deployment Screenshots](screenshots/)
+[View Deployment Screenshots](screenshots/)
+
+
+The repository contains:
+
+- Azure deployment screenshots
+- Linux configuration steps
+- Database setup
+- WordPress installation
+- DNS configuration
+- SSL implementation
 
 
 ---
@@ -285,4 +342,11 @@ The complete step-by-step deployment screenshots are available here:
 
 This project is licensed under the MIT License.
 
-This repository is a technical portfolio demonstration showing Azure cloud deployment, Linux administration, and business website hosting capabilities.
+This repository is a technical portfolio demonstration showing:
+
+- Azure Cloud Deployment
+- Linux System Administration
+- Web Hosting Architecture
+- DNS Management
+- SSL Security Implementation
+- WordPress Hosting
