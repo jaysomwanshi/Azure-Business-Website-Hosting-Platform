@@ -1,0 +1,19 @@
+# Sensitive files
+*.pem
+*.ppk
+*.key
+
+# WordPress sensitive files
+wp-config.php
+
+# Environment files
+.env
+
+# Backup files
+*.sql.bak
+*.zip
+*.tar.gz
+
+# OS files
+Thumbs.db
+.DS_Store
