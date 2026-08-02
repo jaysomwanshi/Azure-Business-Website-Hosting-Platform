@@ -1,3 +1,8 @@
+![Azure](https://img.shields.io/badge/Microsoft-Azure-0078D4?style=for-the-badge&logo=microsoftazure)
+![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange?style=for-the-badge&logo=ubuntu)
+![WordPress](https://img.shields.io/badge/WordPress-CMS-blue?style=for-the-badge&logo=wordpress)
+![Nginx](https://img.shields.io/badge/Nginx-Web_Server-green?style=for-the-badge&logo=nginx)
+
 # 🚀 Azure Business Website Hosting Platform
 
 ## Project Overview
